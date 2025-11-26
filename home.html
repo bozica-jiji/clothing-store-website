@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bare & Beige - Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+body {
+    background-color: #4b2e2a;
+    color: #f5f0e6;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+    width: 100%;
+    background-color: #3a221f;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+nav a {
+    color: #f5f0e6;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1em;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+nav a:hover {
+    color: #e0d8c7;
+}
+nav a.active {
+    text-decoration: underline;
+}
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 6em;
+    text-align: center;
+    margin-top: 100px;
+    animation: fadeSlide 2s ease forwards;
+    opacity: 0;
+}
+@keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+button {
+    background: #f5f0e6;
+    color: #4b2e2a;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+button:hover {
+    background: #e0d8c7;
+    transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="home.html" class="active">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<h1>Bare & Beige</h1>
+
+<button onclick="window.location.href='products.html'">Start Shopping</button>
+
+</body>
+</html>

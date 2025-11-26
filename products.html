@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bare & Beige - Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #3e2723; /* Dark brown */
+      color: #f5f5f5;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      position: relative;
+    }
+
+    .brand {
+      font-family: 'Great Vibes', cursive;
+      font-size: 36px;
+      color: #f5f5f5;
+    }
+
+    .collection-heading {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      animation: fadeScale 2s ease-in-out;
+    }
+
+    @keyframes fadeScale {
+      0% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+      }
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 50px 20px;
+    }
+
+    .product-button {
+      background-color: #5d4037;
+      border: none;
+      border-radius: 100px;
+      overflow: hidden;
+      width: 800px;
+      height: 800px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .product-button:hover {
+      transform: scale(1.05);
+    }
+
+    .product-button img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 15px 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="brand">Bare & Beige</div>
+    <div class="collection-heading">Explore Our Collection</div>
+  </header>
+  <div class="button-container">
+    <a href="tops.html">
+      <button class="product-button">
+        <img src="https://i.pinimg.com/736x/02/c7/42/02c7423a2bb3457c864154dc0825a2fc.jpg" alt="Tops">
+        <div class="label">Tops</div>
+      </button>
+    </a>
+    <a href="shirt.html">
+      <button class="product-button">
+        <img src="https://i.pinimg.com/1200x/cf/3f/47/cf3f47cc0ba301a969411a317ffe97ce.jpg" alt="Shirts">
+        <div class="label">Shirts</div>
+      </button>
+    </a>
+    <a href="product.html">
+      <button class="product-button">
+        <img src="https://i.pinimg.com/736x/9f/62/c7/9f62c7ac2ef3c72fddb8b21d65b212b1.jpg" alt="All Products">
+        <div class="label">All Products</div>
+      </button>
+    </a>
+  </div>
+</body>
+
+</html>
